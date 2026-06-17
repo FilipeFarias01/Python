@@ -1,1 +1,16 @@
+# Ficha do Desenvolvedor
 
+nome = input('Digite seu nome: ')
+idade = int(input('Digite sua idade: '))
+linguagem_favorita = (input('Digite sua linguagem favorita: '))
+experiencia = (input('Anos de curso: '))
+nota = int(input('Dê uma nota de satisfação com o curso: ')) 
+
+print("\n====================================")
+print("     FICHA DO DESENVOLVEDOR         ")
+print("====================================\n")
+print(f"Nome: {nome}")
+print(f"Idade: {idade} anos")
+print(f"Anos de curso: {experiencia}")
+print(f"Linguagem favorita: {linguagem_favorita}\n")
+print("====================================")

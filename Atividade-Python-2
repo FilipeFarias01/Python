@@ -1,0 +1,26 @@
+# Atividade - Três Lados, Uma Decisão
+# Autor: Filipe Farias
+
+# Entrada de dados
+ladoA = float(input("Informe o valor do lado A: "))
+ladoB = float(input("Informe o valor do lado B: "))
+ladoC = float(input("Informe o valor do lado C: "))
+
+# Verificação da existência do triângulo
+# Cada lado deve ser menor que a soma dos outros dois
+if ladoA < ladoB + ladoC and ladoB < ladoA + ladoC and ladoC < ladoA + ladoB:
+
+    print("\nTriângulo válido!")
+
+    # Classificação do triângulo
+    if ladoA == ladoB and ladoB == ladoC:
+        print("Classificação: Equilátero")
+
+    elif ladoA == ladoB or ladoA == ladoC or ladoB == ladoC:
+        print("Classificação: Isósceles")
+
+    else:
+        print("Classificação: Escaleno")
+
+else:
+    print("\nTriângulo inválido!")

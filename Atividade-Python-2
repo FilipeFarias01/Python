@@ -1,0 +1,30 @@
+# Atividade - 
+# Autor: Filipe Farias
+
+# Simulador de Semáforo
+
+# Recebe a cor do semáforo digitada pelo usuário
+cor = input("Digite a cor do semáforo: ")
+
+# Recebe se é pedestre ou motorista (desafio extra)
+tipo = input("Você é pedestre ou motorista? ")
+
+# Verifica a cor digitada
+if cor == "verde":
+    # Se for verde, verifica se é pedestre
+    if tipo == "pedestre":
+        print("Você pode atravessar com atenção.")
+    else:
+        print("Pode avançar com atenção.")
+
+elif cor == "amarelo":
+    # Se for amarelo, mantém a regra original
+    print("Atenção! Prepare-se para parar.")
+
+elif cor == "vermelho":
+    # Se for vermelho, mantém a regra original
+    print("Pare! Aguarde o sinal verde.")
+
+else:
+    # Caso digite qualquer outra coisa
+    print("Cor inválida. Digite verde, amarelo ou vermelho.")
